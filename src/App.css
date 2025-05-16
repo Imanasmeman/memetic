@@ -1,0 +1,60 @@
+body {
+  background: #18181b;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.meme-editor-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #23272f;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 32px 32px 24px 32px;
+}
+
+.meme-editor-toolbar {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.meme-editor-toolbar input[type="file"] {
+  color: #fff;
+}
+
+.meme-editor-toolbar input[type="color"] {
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.meme-editor-toolbar button {
+  background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.meme-editor-toolbar button:hover {
+  background: linear-gradient(90deg, #818cf8 0%, #38bdf8 100%);
+}
+
+.meme-editor-stage-wrapper {
+  border: 2px solid #3f3f46;
+  border-radius: 12px;
+  background: #18181b;
+  margin-top: 18px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
