@@ -1,0 +1,133 @@
+/* --- Navbar Styles --- */
+.navbar {
+  padding: 0.75rem 1rem;
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  gap: 0.5rem;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.navbar-logo-icon {
+  font-size: 1.7rem;
+  filter: drop-shadow(0 2px 4px #0003);
+}
+
+.navbar-icon-btn {
+  background: none;
+  border: none;
+  color: #61dafb;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-right: 0.3rem;
+  transition: color 0.2s;
+  padding: 0.3rem;
+}
+
+.navbar-create-btn {
+  background: #61dafb;
+  border: none;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #232526;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  font-size: 0.95rem;
+  box-shadow: 0 1px 4px #0002;
+  transition: background 0.2s;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.navbar-welcome {
+  font-size: 0.95rem;
+  margin-right: 0.3rem;
+  color: #b3e5fc;
+  font-weight: 500;
+}
+
+.navbar-login-btn {
+  background: #fff;
+  color: #232526;
+  border: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  box-shadow: 0 1px 4px #0002;
+  transition: background 0.2s;
+}
+
+.navbar-logout-btn {
+  background: #ff5252;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 1px 4px #0002;
+  transition: background 0.2s;
+}
+
+/* Responsive for tablets and up */
+@media (min-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+  .navbar-left {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .navbar-logo {
+    font-size: 1.6rem;
+  }
+  .navbar-logo-icon {
+    font-size: 2rem;
+  }
+  .navbar-create-btn,
+  .navbar-login-btn,
+  .navbar-logout-btn {
+    font-size: 1rem;
+  }
+  .navbar-right {
+    gap: 1rem;
+  }
+  .navbar-welcome {
+    font-size: 1rem;
+  }
+}
