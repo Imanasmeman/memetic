@@ -1,12 +1,162 @@
-# React + Vite
+# Memetic
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Memetic is a modern meme creation and sharing web app built with React, Vite, Firebase, and Konva.js. Users can create custom memes using an interactive canvas editor, upload them to a public feed, like and comment on memes, and manage authentication with Firebase.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **User Authentication**: Sign up and log in with email/password using Firebase Auth.
+- **Meme Editor** (powered by Konva.js):
+  - Upload background images.
+  - Add, move, resize, and edit text overlays on a canvas.
+  - Change text color and add hashtags.
+  - Drag, resize, and transform images and text interactively.
+- **Meme Feed**:
+  - View all uploaded memes in a scrollable feed.
+  - Sort memes by latest or most liked.
+  - Like/unlike memes (one like per user).
+  - Add comments to memes.
+- **Responsive Design**: Works well on desktop and mobile devices.
+- **Cloud Storage**: Memes are stored in Firebase Realtime Database and images can be uploaded to Cloudinary.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technologies Used
+
+- **React** – Frontend framework for building UI.
+- **Vite** – Fast development server and build tool.
+- **Firebase** – Authentication and Realtime Database for user and meme data.
+- **Cloudinary** – For image uploads (optional).
+- **Konva.js** – Canvas-based meme editing (drag, resize, text overlays, etc).
+- **react-konva** – React bindings for Konva.js, enabling interactive canvas editing.
+
+---
+
+## Project Structure
+
+```
+memetic/
+  ├── .gitignore
+  ├── eslint.config.js
+  ├── index.html
+  ├── package.json
+  ├── README.md
+  ├── vite.config.js
+  ├── public/
+  ├── src/
+      ├── App.css
+      ├── App.jsx
+      ├── Authform.jsx
+      ├── EditableText.jsx
+      ├── firebase.jsx
+      ├── index.css
+      ├── main.jsx
+      ├── MemeEditer.css
+      ├── MemeEditer.jsx
+      ├── MemeScroll.css
+      ├── Memescroll.jsx
+      ├── .env/
+      ├── assets/
+      ├── components/
+      │    ├── imageupload.jsx
+      │    ├── Navbar.css
+      │    ├── Navbar.jsx
+      │    └── Uploadmeme.jsx
+      └── contexts/
+           └── Authcontexts.jsx
+```
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+
+### Installation
+
+1. **Clone the repository:**
+   ```sh
+   git clone <your-repo-url>
+   cd memetic/memetic
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+3. **Environment Variables:**
+   - The project uses Firebase and Cloudinary. Make sure to set up your Firebase project and Cloudinary account.
+   - Update `src/firebase.jsx` with your Firebase config.
+   - For Cloudinary uploads, update the upload preset and cloud name in [`src/components/imageupload.jsx`](src/components/imageupload.jsx).
+
+4. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+   The app will be available at [http://localhost:5173](http://localhost:5173) (or as indicated in your terminal).
+
+---
+
+## Usage
+
+- **Sign Up / Login:** Use the authentication form to create an account or log in.
+- **Create a Meme:** Go to the editor, upload an image, add/edit text, set hashtags, and upload your meme.
+- **Browse Feed:** View memes from all users, like, and comment on them.
+- **Like/Comment:** Click the heart to like/unlike. Click the comment icon to view/add comments.
+
+---
+
+## Main Components
+
+- [`App.jsx`](src/App.jsx): Main app router and layout.
+- [`Authform.jsx`](src/Authform.jsx): Handles user authentication.
+- [`MemeEditer.jsx`](src/MemeEditer.jsx): Meme creation and editing interface using Konva.js.
+- [`Memescroll.jsx`](src/Memescroll.jsx): Meme feed with sorting, likes, and comments.
+- [`components/Navbar.jsx`](src/components/Navbar.jsx): Top navigation bar.
+- [`components/imageupload.jsx`](src/components/imageupload.jsx): Cloudinary image upload utility.
+- [`contexts/Authcontexts.jsx`](src/contexts/Authcontexts.jsx): React context for authentication state.
+- [`firebase.jsx`](src/firebase.jsx): Firebase configuration and exports.
+
+---
+
+## Customization
+
+- **Firebase:**  
+  Update [`src/firebase.jsx`](src/firebase.jsx) with your Firebase project credentials.
+- **Cloudinary:**  
+  Update the upload preset and cloud name in [`src/components/imageupload.jsx`](src/components/imageupload.jsx).
+- **Styling:**  
+  Modify CSS files in `src/` and `src/components/` for custom themes.
+
+---
+
+## Scripts
+
+- `npm run dev` – Start development server
+- `npm run build` – Build for production
+- `npm run preview` – Preview production build
+- `npm run lint` – Run ESLint
+
+---
+
+## License
+
+This project is for educational/demo purposes. Please update with your own license if you plan to use it in production.
+
+---
+
+## Credits
+
+- Built with [React](https://react.dev/), [Vite](https://vitejs.dev/), [Firebase](https://firebase.google.com/), [Cloudinary](https://cloudinary.com/), and [Konva.js](https://konvajs.org/).
+- UI icons from [Font Awesome](https://fontawesome.com/).
+
+---
+
+## Contact
+
+For questions or suggestions, open an issuse. 
