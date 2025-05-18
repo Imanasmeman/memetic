@@ -222,3 +222,25 @@
   background: #21a1f3;
   color: #fff;
 }
+/* ...existing code... */
+
+.feedContainer {
+  width: 100%;
+  max-width: 600px; /* Match editor */
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background: #232526cc;
+  box-sizing: border-box;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #0003;
+}
+
+/* ...existing code... */
+
+.card {
+  width: 100%;
+  box-sizing: border-box;
+  /* ...existing code... */
+}
+
+/* ...existing code... */
