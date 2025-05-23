@@ -127,7 +127,7 @@ memetic/
 * 🚀 **Upload to Feed** – Share memes with the public feed
 * ❤️ **Like/Comment** – Interact with memes from other users
 
-🔗 **Live Demo**: [https://memeticsite.netlify.app/feed](https://memeticsite.netlify.app/feed)
+🔗 **Live Demo**: [https://memeticsite.netlify.app/feed](https://memeticsite.netlify.app)
 
 ---
 
