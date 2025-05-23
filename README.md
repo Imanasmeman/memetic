@@ -35,7 +35,6 @@ Memetic is a modern meme creation and sharing web app built with React, Vite, Fi
 
 ## Project Structure
 
-```
 memetic/
   ├── .gitignore
   ├── eslint.config.js
@@ -65,7 +64,6 @@ memetic/
       │    └── Uploadmeme.jsx
       └── contexts/
            └── Authcontexts.jsx
-```
 
 ---
 
@@ -79,30 +77,27 @@ memetic/
 ### Installation
 
 1. **Clone the repository:**
-   ```sh
    git clone <your-repo-url>
    cd memetic/memetic
-   ```
 
 2. **Install dependencies:**
-   ```sh
    npm install
-   ```
 
 3. **Environment Variables:**
    - The project uses Firebase and Cloudinary. Make sure to set up your Firebase project and Cloudinary account.
-   - Update `src/firebase.jsx` with your Firebase config.
-   - For Cloudinary uploads, update the upload preset and cloud name in [`src/components/imageupload.jsx`](src/components/imageupload.jsx).
+   - Update src/firebase.jsx with your Firebase config.
+   - For Cloudinary uploads, update the upload preset and cloud name in src/components/imageupload.jsx.
 
 4. **Start the development server:**
-   ```sh
    npm run dev
-   ```
-   The app will be available at [http://localhost:5173](http://localhost:5173) (or as indicated in your terminal).
+   The app will be available at http://localhost:5173 (or as indicated in your terminal).
 
 ---
 
 ## Usage
+
+- **Live Demo:**  
+  Try the deployed app here: https://memeticsite.netlify.app/feed
 
 - **Sign Up / Login:** Use the authentication form to create an account or log in.
 - **Create a Meme:** Go to the editor, upload an image, add/edit text, set hashtags, and upload your meme.
@@ -113,34 +108,34 @@ memetic/
 
 ## Main Components
 
-- [`App.jsx`](src/App.jsx): Main app router and layout.
-- [`Authform.jsx`](src/Authform.jsx): Handles user authentication.
-- [`MemeEditer.jsx`](src/MemeEditer.jsx): Meme creation and editing interface using Konva.js.
-- [`Memescroll.jsx`](src/Memescroll.jsx): Meme feed with sorting, likes, and comments.
-- [`components/Navbar.jsx`](src/components/Navbar.jsx): Top navigation bar.
-- [`components/imageupload.jsx`](src/components/imageupload.jsx): Cloudinary image upload utility.
-- [`contexts/Authcontexts.jsx`](src/contexts/Authcontexts.jsx): React context for authentication state.
-- [`firebase.jsx`](src/firebase.jsx): Firebase configuration and exports.
+- App.jsx: Main app router and layout.
+- Authform.jsx: Handles user authentication.
+- MemeEditer.jsx: Meme creation and editing interface using Konva.js.
+- Memescroll.jsx: Meme feed with sorting, likes, and comments.
+- components/Navbar.jsx: Top navigation bar.
+- components/imageupload.jsx: Cloudinary image upload utility.
+- contexts/Authcontexts.jsx: React context for authentication state.
+- firebase.jsx: Firebase configuration and exports.
 
 ---
 
 ## Customization
 
 - **Firebase:**  
-  Update [`src/firebase.jsx`](src/firebase.jsx) with your Firebase project credentials.
+  Update src/firebase.jsx with your Firebase project credentials.
 - **Cloudinary:**  
-  Update the upload preset and cloud name in [`src/components/imageupload.jsx`](src/components/imageupload.jsx).
+  Update the upload preset and cloud name in src/components/imageupload.jsx.
 - **Styling:**  
-  Modify CSS files in `src/` and `src/components/` for custom themes.
+  Modify CSS files in src/ and src/components/ for custom themes.
 
 ---
 
 ## Scripts
 
-- `npm run dev` – Start development server
-- `npm run build` – Build for production
-- `npm run preview` – Preview production build
-- `npm run lint` – Run ESLint
+- npm run dev – Start development server
+- npm run build – Build for production
+- npm run preview – Preview production build
+- npm run lint – Run ESLint
 
 ---
 
@@ -152,11 +147,11 @@ This project is for educational/demo purposes. Please update with your own licen
 
 ## Credits
 
-- Built with [React](https://react.dev/), [Vite](https://vitejs.dev/), [Firebase](https://firebase.google.com/), [Cloudinary](https://cloudinary.com/), and [Konva.js](https://konvajs.org/).
-- UI icons from [Font Awesome](https://fontawesome.com/).
+- Built with React, Vite, Firebase, Cloudinary, and Konva.js.
+- UI icons from Font Awesome.
 
 ---
 
 ## Contact
 
-For questions or suggestions, open an issuse. 
+For questions or suggestions, open an issue.
