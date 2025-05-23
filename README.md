@@ -33,8 +33,6 @@ Memetic is a modern meme creation and sharing web app built with React, Vite, Fi
 
 ---
 
-## Project Structure
-
 memetic/
   ├── .gitignore
   ├── eslint.config.js
@@ -64,7 +62,6 @@ memetic/
       │    └── Uploadmeme.jsx
       └── contexts/
            └── Authcontexts.jsx
-
 ---
 
 ## Getting Started
